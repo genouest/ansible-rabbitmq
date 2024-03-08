@@ -1,7 +1,3 @@
-listeners.tcp           = {{ rabbitmq_config.listeners.tcp }}
-listeners.ssl.default   = {{ rabbitmq_config.ssl_listeners.default }}
-ssl_options.verify      = {{ rabbitmq_config.ssl_options.verify }}
-
 management_agent.disable_metrics_collector = {{ rabbitmq_config.management_agent.disable_metrics_collector }}
 management.disable_stats = {{ rabbitmq_config.management.disable_stats }}
 consumer_timeout = {{ rabbitmq_config.consumer_timeout }}
