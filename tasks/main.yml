@@ -8,3 +8,5 @@
 - name: Create users and vhosts
   include_tasks: users_vhosts.yml
   loop: "{{ rabbitmq_users }}"
+  loop_control:
+      label: "{{ item.user }}"
